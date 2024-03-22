@@ -22,17 +22,16 @@ public class CaseIntelligente extends Case {
     }
 
     @Override
-
     public String toString(){
         String symboleCase = "";
-        if (!this.estDecouverte()){
+        if (!super.estDecouverte()){
             symboleCase = " ";
-            if (this.estMarquee()){
+            if (super.estMarquee()){
                 symboleCase = "?";
             }
         }
         else {
-            if (this.contientUneBombe()){
+            if (super.contientUneBombe()){
                 symboleCase = "@";
             }
             else {
